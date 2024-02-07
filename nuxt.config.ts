@@ -19,6 +19,9 @@ export default defineNuxtConfig({
     "@pinia-plugin-persistedstate/nuxt",
     "@vite-pwa/nuxt"
   ],
+  build: {
+    transpile: ['pinia-plugin-persistedstate'],
+  },
   pwa: {
     manifest: {
       name: "Linktree Clone",
