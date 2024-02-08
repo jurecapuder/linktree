@@ -10,9 +10,15 @@
       >
         <img
           class="lg:w-28 w-[75px] select-none"
-          src="~/assets/images/linktree-logo.png"
+          src="../assets/images/linktree-logo.png"
         >
       </NuxtLink>
+
+      <main class="w-full">
+        <div class="w-full md:max-w-[550px] max-w-[360px] mx-auto">
+          <slot />
+        </div>
+      </main>
     </div>
   </div>
 </template>
