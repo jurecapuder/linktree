@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-  import AuthLayout from '~~/layouts/AuthLayout.vue';
+  import AuthLayout from '../layouts/AuthLayout.vue';
 </script>
