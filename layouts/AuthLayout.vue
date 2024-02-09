@@ -23,7 +23,7 @@
 
     <div class="lg:block hidden w.1/3 pointer-events-none">
       <img
-        v-if="$route.fullPath === '/'"
+        v-if="route.fullPath === '/'"
         class="object-cover w-full h-screen select-none"
         src="~/assets/images/side1.png"
       >
@@ -38,5 +38,14 @@
 </template>
 
 <script setup>
+  import { useUserStore } from "../stores/user";
+  import { storeToRefs } from "pinia";
+  
+  const userStore = useUserStore();
+
+  const { updatedLinkId } = storeToRefs(userStore);
+
   const route = useRoute();
+
+  onUnmounted(() => updatedLinkId.value = 0);
 </script>
