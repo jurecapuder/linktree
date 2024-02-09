@@ -27,6 +27,12 @@
         class="object-cover w-full h-screen select-none"
         src="~/assets/images/side1.png"
       >
+
+      <img
+        v-else
+        class="object-cover w-full h-screen select-none"
+        src="~/assets/images/side2.png"
+      >
     </div>
   </div>
 </template>
