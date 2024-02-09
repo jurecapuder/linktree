@@ -10,7 +10,7 @@
       >
         <img
           class="lg:w-28 w-[75px] select-none"
-          src="../assets/images/linktree-logo.png"
+          src="~/assets/images/linktree-logo.png"
         >
       </NuxtLink>
 
