@@ -20,9 +20,17 @@
         </div>
       </main>
     </div>
+
+    <div class="lg:block hidden w.1/3 pointer-events-none">
+      <img
+        v-if="$route.fullPath === '/'"
+        class="object-cover w-full h-screen select-none"
+        src="~/assets/images/side1.png"
+      >
+    </div>
   </div>
 </template>
 
 <script setup>
-
+  const route = useRoute();
 </script>
