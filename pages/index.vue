@@ -24,4 +24,8 @@
 
 <script setup>
   import AuthLayout from '~~/layouts/AuthLayout.vue';
+
+  let email = ref(null);
+  let password = ref(null);
+  let errors = ref(null);
 </script>
