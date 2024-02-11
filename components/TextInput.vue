@@ -16,5 +16,7 @@
 </template>
 
 <script setup>
+  const emit = defineEmits(["updated:input"]);
 
+  const props = defineProps(["input", "placeholder", "max", "inputType", "error"]);
 </script>
