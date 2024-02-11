@@ -9,12 +9,22 @@
         class="mt-12"
         @submit.prevent="$event => login()"
       >
+
       <div>
         <TextInput
           placeholder="Email: link@gmail.com"
           v-model:input="email"
           inputType="email"
           :error="errors && errors.email ? errors.email[0] : ''"
+        />
+      </div>
+
+      <div class="mt-4">
+        <TextInput
+          placeholder="Password"
+          v-model:input="password"
+          inputType="password"
+          :error="errors && errors.password ? errors.password[0] : ''"
         />
       </div>
     </form>
