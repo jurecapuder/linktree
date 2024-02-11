@@ -42,6 +42,13 @@
 
     <div class="text-[14px] text-center pt-12">
       Don't have an account?
+
+      <NuxtLink
+        to="/register"
+        class="text-[#8228D9] underline"
+      >
+        Sign up
+      </NuxtLink>
     </div>
     </div>
   </AuthLayout>
