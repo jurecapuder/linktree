@@ -35,10 +35,14 @@
           :disabled="(!email || !password)"
           :class="(email && password) ? 'bg-[#8228D9] hover:bg-[#6C21B3] text-white' : 'bg-[#EFF0EB] text-[#A7AAA2]'"
         >
-
+          Log in
         </button>
       </div>
     </form>
+
+    <div class="text-[14px] text-center pt-12">
+      Don't have an account?
+    </div>
     </div>
   </AuthLayout>
 </template>
