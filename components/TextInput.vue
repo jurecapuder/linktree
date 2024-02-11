@@ -19,4 +19,6 @@
   const emit = defineEmits(["updated:input"]);
 
   const props = defineProps(["input", "placeholder", "max", "inputType", "error"]);
+
+  const { input, placeholder, max, inputType, error } = toRefs(props);
 </script>
