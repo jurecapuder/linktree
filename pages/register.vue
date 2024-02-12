@@ -52,19 +52,19 @@
           :disabled="(!name || !email || !password || !confirmPassword)"
           :class="(name && email && password && confirmPassword) ? 'bg-[#8228D9] hover:bg-[#6C21B3] text-white' : 'bg-[#EFF0EB] text-[#A7AAA2]'"
         >
-          Log in
+          Create account
         </button>
       </div>
     </form>
 
     <div class="text-[14px] text-center pt-12">
-      Don't have an account?
+      Already have an account?
 
       <NuxtLink
-        to="/register"
+        to="/"
         class="text-[#8228D9] underline"
       >
-        Sign up
+        Log in
       </NuxtLink>
     </div>
     </div>
