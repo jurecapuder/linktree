@@ -49,8 +49,8 @@
         <button
           type="submit"
           class="rounded-full w-full p-3 font-bold"
-          :disabled="(!email || !password)"
-          :class="(email && password) ? 'bg-[#8228D9] hover:bg-[#6C21B3] text-white' : 'bg-[#EFF0EB] text-[#A7AAA2]'"
+          :disabled="(!name || !email || !password || !confirmPassword)"
+          :class="(name && email && password && confirmPassword) ? 'bg-[#8228D9] hover:bg-[#6C21B3] text-white' : 'bg-[#EFF0EB] text-[#A7AAA2]'"
         >
           Log in
         </button>
