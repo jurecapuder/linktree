@@ -1,5 +1,5 @@
 <template>
   <VitePwaManifest />
 
-  <NextPage />
+  <NuxtPage />
 </template>
