@@ -1,7 +1,10 @@
 <template>
   <AdminLayout>
-    <div>
-      
+    <div
+      id="AdminPage"
+      class="flex h-[100vh] pb-4"
+    >
+      AdminPage
     </div>
   </AdminLayout>
 </template>
