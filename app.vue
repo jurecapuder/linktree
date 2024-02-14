@@ -17,6 +17,12 @@
   let bgIsGray = ref(false);
 
   onMounted(() => {
+    useStore.colors = colors();
+    updatedLinkId.value = 0;
+    addLinkOverlay.value = false;
+    isPreviewOverlay.value = false;
+    isMobile.value = false;
+
     if ("ontouchstart" in window) {
       isMobile.value = true;
     }
