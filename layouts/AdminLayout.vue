@@ -31,6 +31,10 @@
                 size="18"
                 :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
               />
+
+              <div :class="route.fullPath === link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
+                {{ link.name }}
+              </div>
             </NuxtLink>
           </div>
         </div>
