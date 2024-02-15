@@ -16,6 +16,10 @@
               src="~/assets/images/linktree-logo-icon.png"
             />
           </LuxtLink>
+          
+          <div class="lg:px-2.5 px-0.5 md:block hidden">
+            
+          </div>
         </div>
       </div>
     </div>
@@ -26,4 +30,11 @@
   import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
+
+  const links = ref([
+    { name: "Links", url: "/admin", icon: "icon-park-outline:hamburger-button" },
+    { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular" },
+    { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics" },
+    { name: "Settings", url: "/", icon: "material-symbols:settings" },
+  ])
 </script>
