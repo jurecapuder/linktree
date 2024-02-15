@@ -25,7 +25,12 @@
               :to="link.url"
               class="flex items-center text-sm font-semibold px-1.5 py-3 rounded-lg hover:bg-gray-100"
             >
-              
+              <Icon
+                :name="link.icon"
+                class="mr-0.5"
+                size="18"
+                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+              />
             </NuxtLink>
           </div>
         </div>
@@ -38,6 +43,8 @@
   import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
+
+  const route = useRoute();
 
   const links = ref([
     { name: "Links", url: "/admin", icon: "icon-park-outline:hamburger-button" },
