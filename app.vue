@@ -17,7 +17,7 @@
   let bgIsGray = ref(false);
 
   onMounted(() => {
-    useStore.colors = colors();
+    userStore.colors = colors();
     updatedLinkId.value = 0;
     addLinkOverlay.value = false;
     isPreviewOverlay.value = false;
