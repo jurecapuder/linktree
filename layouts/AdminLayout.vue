@@ -67,6 +67,16 @@
 
             Share
           </button>
+
+          <button
+            @click="$event => !isTopNav ? openMenu('TopNav') : isTopNav = false"
+            class="rounded-full md:block hidden"
+          >
+            <img
+              class="rounded-full min-w-[40px] w-[40px]"
+              src="https://picsum.photos/id/8/300/320"
+            />
+          </button>
         </div>
       </div>
     </div>
