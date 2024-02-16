@@ -47,6 +47,16 @@
               size="22"
             />
           </button>
+
+          <button class="flex items-center font-semibold px-3 py-2 rounded-full bg-gray-100">
+            <Icon
+              name="hdi:lightning-bolt"
+              class="mr-0.5"
+              size="22"
+            />
+
+            Upgrade
+          </button>
         </div>
       </div>
     </div>
