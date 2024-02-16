@@ -38,6 +38,16 @@
             </NuxtLink>
           </div>
         </div>
+
+        <div class="flex items-center justify-between gap-3">
+          <button class="flex items-center text-sm font-semibold p-2 rounded-full hover:bg-gray-100">
+            <Icon
+              name="healthicons:megaphone-outline"
+              class="mr-0.5"
+              size="22"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>
