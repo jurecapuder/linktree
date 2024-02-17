@@ -90,8 +90,16 @@
         v-if="isTopNav"
         class="absolute md:block hidden right-4 top-16 border shadow-[0_5px_15px_15pxrgba(0, 0, 0, 0.1)] bg-white w-full max-w-[300px] rounded-2xl"
       >
-        <button>
-          
+        <button
+          @click="$event => logout()"
+          class="w-full flex items-center text-gray-600 text-[15px] p-3 hover:text-black"
+        >
+          <Icon
+            name="circum:logout"
+            class="mr-6"
+          />
+
+          Sign out
         </button>
       </div>
     </div>
