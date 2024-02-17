@@ -108,7 +108,7 @@
 
 <script setup>
   import { routerKey } from "vue-router";
-import { useUserStore } from "~~/stores/user";
+  import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
 
