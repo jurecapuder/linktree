@@ -96,6 +96,10 @@
 
   const route = useRoute();
 
+  let isTopNav = ref(false);
+  let windowWidth = ref(window.innerWidth);
+  let isSecondaryTopNav = ref(false);
+
   const links = ref([
     { name: "Links", url: "/admin", icon: "icon-park-outline:hamburger-button" },
     { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular" },
