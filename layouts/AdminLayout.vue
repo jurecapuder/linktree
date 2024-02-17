@@ -90,11 +90,14 @@
 </template>
 
 <script setup>
-  import { useUserStore } from "~~/stores/user";
+  import { routerKey } from "vue-router";
+import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
 
   const route = useRoute();
+
+  const router = useRouter();
 
   let isTopNav = ref(false);
   let windowWidth = ref(window.innerWidth);
@@ -106,4 +109,14 @@
     { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics" },
     { name: "Settings", url: "/", icon: "material-symbols:settings" },
   ])
+
+  const openMenu = (str) => {
+    if (str === "TopNav") {
+      isTopNav.value = true;
+    } else if (str === "SecondaryTopNav") {
+      isSecondaryTopNav.value = true;
+    } else {
+      router.push("/admin/settings")
+    }
+  }
 </script>
