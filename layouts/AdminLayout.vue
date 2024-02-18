@@ -115,7 +115,7 @@
             v-for="link in linksSecondaryNav"
             class="w-1/4"
           >
-            
+
           </div>
         </div>
       </div>  
@@ -148,6 +148,13 @@
     { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular" },
     { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics" },
     { name: "Settings", url: "/", icon: "material-symbols:settings" },
+  ])
+
+  const linksSecondaryNav = ref([
+    { name: "Links", url: "/admin", icon: "icon-park-outline:hamburger-button" },
+    { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular" },
+    { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics" },
+    { name: "More", url: "/admin/more", icon: "", img: userStore.image }
   ])
 
   const openMenu = (str) => {
