@@ -117,7 +117,7 @@
   const router = useRouter();
 
   let isTopNav = ref(false);
-  let windowWidth = ref(window.innerWidth);
+  let windowWidth = ref( process.client ? window.innerWidth : "");
   let isSecondaryTopNav = ref(false);
 
   const links = ref([
@@ -136,4 +136,6 @@
       router.push("/admin/settings")
     }
   }
+
+  const logout = async () => {}
 </script>
