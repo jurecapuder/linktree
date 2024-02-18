@@ -103,6 +103,23 @@
         </button>
       </div>
     </div>
+
+    <div
+      v-if="!useUserStore.isMobile"
+      id="SecondaryTopNav"
+      class="w-full flex items-center justify-between md:pt-2.5 md:px-2.5"
+    >
+      <div class="flex items-center justify-between gap-4 shadow-sm bg-white w-full">
+        <div class="flex w-full">
+          <div
+            v-for="link in linksSecondaryNav"
+            class="w-1/4"
+          >
+            
+          </div>
+        </div>
+      </div>  
+    </div>
   </div>
 </template>
 
