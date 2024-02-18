@@ -121,7 +121,18 @@
               :class="link.url === route.fullPath ? 'border-b-2 border-black' : ''"
             >
               <button class="relative pt-[6px]">
-                
+                <Icon
+                v-if="link.icon"
+                :name="link.icon"
+                size="20"
+                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+                />
+
+                <img
+                  v-else
+                  class="rounded-full w-[22px] h-[22px]"
+                  :src="link.img"
+                />
               </button>
             </NuxtLink>
           </div>
