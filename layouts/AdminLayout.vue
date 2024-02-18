@@ -120,6 +120,12 @@
   let windowWidth = ref( process.client ? window.innerWidth : "");
   let isSecondaryTopNav = ref(false);
 
+  onMounted(() => {
+    window.addEventListener("resize", function() {
+      windowWidth.value = window.innerWidth;
+    })
+  })
+
   const links = ref([
     { name: "Links", url: "/admin", icon: "icon-park-outline:hamburger-button" },
     { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular" },
@@ -138,4 +144,10 @@
   }
 
   const logout = async () => {}
+
+  watch(() => windowWidth.value, () => {
+    if (windowWidth.value < 767) {
+      isTopNav.value = false;
+    }
+  })
 </script>
