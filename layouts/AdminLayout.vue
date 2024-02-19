@@ -130,7 +130,7 @@
 
                 <img
                   v-else
-                  class="rounded-full w-[22px] h-[22px]"
+                  class="rounded-full min-w-[22px] w-[22px]"
                   :src="link.img"
                 />
               </button>
