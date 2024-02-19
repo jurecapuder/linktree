@@ -167,6 +167,16 @@
         Preview
       </button>
     </div>
+
+    <div
+      v-if="userStore.isMobile"
+      id="TopNavMobile"
+      class="fixed w-full flex items-center justify-between px-2.5 bg-[#F3F3F1]"
+    >
+      <div class="flex items-center justify-between w-full py-[8px]">
+        
+      </div>
+    </div>
   </div>
 </template>
 
