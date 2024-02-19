@@ -148,11 +148,29 @@
         </div>
       </div>  
     </div>
+
+    <div
+      v-if="!userStore.isMobile"
+      id="PreviewButton"
+      class="fixed bottom-10 w-full flex items-center justify-center"
+    >
+      <button
+        @click="$event => userStore.isPreviewOverlay = true"
+        class="md:hidden flex items-center text-[17px] font-semibold px-5 py-2.5 bg-[#DFE2D9] rounded-full"
+      >
+        <Icon
+          name="icon-park-outline:preview-open"
+          size="20"
+          class="mr-2"
+        />
+
+        Preview
+      </button>
+    </div>
   </div>
 </template>
 
 <script setup>
-  import { routerKey } from "vue-router";
   import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
