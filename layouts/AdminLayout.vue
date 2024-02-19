@@ -174,7 +174,9 @@
       class="fixed w-full flex items-center justify-between px-2.5 bg-[#F3F3F1]"
     >
       <div class="flex items-center justify-between w-full py-[8px]">
-        
+        <div class="flex items-center justify-between w-full text-3xl font-bold max-w-[500px]">
+          {{ currentMobilePage }}
+        </div>
       </div>
     </div>
   </div>
@@ -212,6 +214,23 @@
     { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics" },
     { name: "More", url: "/admin/more", icon: "", img: "https://picsum.photos/id/8/300/320" }
   ])
+
+  const currentMobilePage = () => {
+    switch(route.fullPath) {
+      case "/admin":
+        return "Links";
+        break;
+      case "/admin/apperance":
+        return "Apperance";
+        break;
+      case "/admin/preview":
+        return "Preview";
+        break;
+      case "/admin/more":
+        return "More";
+        break;
+    }
+  }
 
   const openMenu = (str) => {
     if (str === "TopNav") {
