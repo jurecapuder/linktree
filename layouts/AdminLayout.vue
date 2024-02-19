@@ -177,6 +177,18 @@
         <div class="flex items-center justify-between w-full text-3xl font-bold max-w-[500px]">
           {{ currentMobilePage }}
         </div>
+
+        <div class="flex items-center justify-between gap-3">
+          <button class="flex items-center text-[18px] font-semibold px-3 py-2 rounded-full bg-gray-200">
+            Upgrade
+
+            <Icon
+              name="mdi:lightning-bolt"
+              class="ml-1"
+              size="20"
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>
