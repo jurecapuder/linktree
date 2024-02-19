@@ -188,6 +188,14 @@
               size="20"
             />
           </button>
+
+          <button class="flex items-center font-semibold px-3 py-2 rounded-full hover:bg-gray-200">
+            <Icon
+              name="ph:share-network"
+              class="mr-0.5"
+              size="23"
+            />
+          </button>
         </div>
       </div>
     </div>
