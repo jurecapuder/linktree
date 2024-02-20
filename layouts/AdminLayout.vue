@@ -260,7 +260,7 @@
     { name: "Apperance", url: "/admin/apperance", icon: "fluent:shapes-48-regular", img: "" },
     { name: "Preview", url: "/admin/preview", icon: "icon-park-outline:preview-open", img: "" },
     { name: "Analytics", url: "/", icon: "tabler:brand-google-analytics", img: "" },
-    { name: "More", url: "/admin/more", icon: "", img: userStore.image }
+    { name: "More", url: "/admin/more", icon: "", img: "https://picsum.photos/id/8/300/320" }
   ])
 
   const currentMobilePage = () => {
