@@ -231,6 +231,12 @@
                 size="25"
                 :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
               />
+
+              <img
+                v-else
+                class="rounded-full min-w-[25px] w-[25px] mt-[2px]"
+                :src="link.img"
+              />
             </NuxtLink>
         </button>
       </div>
