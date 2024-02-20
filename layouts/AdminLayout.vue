@@ -216,7 +216,23 @@
         v-for="link in linksMobile"
         class="w-1/5"
       >
-
+        <button
+          class="relative flex justify-center text-sm w-full h-full font-semibold px-1.5 py-1 hover:bg-gray-100"
+          :class="link.url === route.fullPath ? 'border-t-2 border-t-black' : ''"
+        >
+            <NuxtLink
+              :to="link.url"
+              class="relative h-[35px]"
+            >
+              <Icon
+                v-if="link.icon"
+                :name="link.icon"
+                class="mr-0.5 mt-[2px]"
+                size="25"
+                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+              />
+            </NuxtLink>
+        </button>
       </div>
     </div>
   </div>
