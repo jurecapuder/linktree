@@ -200,6 +200,10 @@
       </div>
     </div>
   </div>
+
+  <div class="px-2.5 w-full z-0">
+    <slot />
+  </div>
 </template>
 
 <script setup>
