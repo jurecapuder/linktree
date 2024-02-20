@@ -237,6 +237,15 @@
                 class="rounded-full min-w-[25px] w-[25px] mt-[2px]"
                 :src="link.img"
               />
+
+              <div
+                class="relative text-[13px]"
+                :class="link.img ? '-left-[4px]' : ''"
+              >
+                <span :class="route.fullPath === link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
+                  {{ link.name }}
+                </span>
+              </div>
             </NuxtLink>
         </button>
       </div>
