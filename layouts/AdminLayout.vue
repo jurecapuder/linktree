@@ -204,6 +204,22 @@
   <div class="px-2.5 w-full z-0">
     <slot />
   </div>
+
+  <div
+    v-if="userStore.isMobile"
+    id="BottomNav"
+    class="fixed z-20 bottom-0 flex w-full bg-white shadow-[0_35px_60px_10px_rgba(0, 0, 0, 0.4)]"
+    :class="userStore.isMobile ? 'h-[70px]' : 'h-[60px]'"
+  >
+    <div class="flex w-full">
+      <div
+        v-for="link in linksMobile"
+        class="w-1/5"
+      >
+
+      </div>
+    </div>
+  </div>
 </template>
 
 <script setup>
