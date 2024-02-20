@@ -105,7 +105,7 @@
     </div>
 
     <div
-      v-if="!useUserStore.isMobile"
+      v-if="!userStore.isMobile"
       id="SecondaryTopNav"
       class="w-full flex items-center justify-between md:pt-2.5 md:px-2.5"
     >
@@ -324,7 +324,7 @@
   const logout = async () => {}
 
   watch(() => windowWidth.value, () => {
-    if (windowWidth.value < 767) {
+    if (windowWidth.value <= 767) {
       isTopNav.value = false;
     }
   })
