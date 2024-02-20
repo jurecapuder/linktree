@@ -4,7 +4,7 @@
     class="w-full fixed z-30"
   >
     <div
-      v-if="!useUserStore.isMobile"
+      v-if="!userStore.isMobile"
       id="TopNav"
       class="w-full flex items-center justify-between md:pt-2.5 md:px-2.5"
     >
