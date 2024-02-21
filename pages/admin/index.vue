@@ -12,7 +12,12 @@
             class="flex items-center justify-center w-full py-3 rounded-full text-white font-semibold bg-[#8828D9] hover:bg-[#6C32B3]"
             :class="userStore.isMobile ? 'mt-8 text-xl' : 'mt-20 md:mt-8'"
           >
-            
+            <Icon
+              v-if="!userStore.isMobile"
+              name="+"
+              class="mr-0.5"
+              size="25"
+            />
           </button>
         </div>
       </div>
