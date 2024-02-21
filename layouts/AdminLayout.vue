@@ -158,7 +158,7 @@
       class="fixed bottom-10 w-full flex items-center justify-center"
     >
       <button
-        @click="$event => userStore.isPreviewOverlay = true"
+        @click="userStore.isPreviewOverlay = true"
         class="md:hidden flex items-center text-[17px] font-semibold px-5 py-2.5 bg-[#DFE2D9] rounded-full"
       >
         <Icon
@@ -221,7 +221,7 @@
       >
         <button
           class="relative flex justify-center text-sm w-full h-full font-semibold px-1.5 py-1 hover:bg-gray-100"
-          :class="link.url === route.fullPath ? 'border-t-2 border-t-black' : ''"
+          :class="link.url == route.fullPath ? 'border-t-2 border-t-black' : ''"
         >
             <NuxtLink
               :to="link.url"
@@ -232,7 +232,7 @@
                 :name="link.icon"
                 class="mr-0.5 mt-[2px]"
                 size="25"
-                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+                :color="route.fullPath == link.url ? '#000000' : '#676B5F'"
               />
 
               <img
@@ -245,7 +245,7 @@
                 class="relative text-[13px]"
                 :class="link.img ? '-left-[4px]' : ''"
               >
-                <span :class="route.fullPath === link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
+                <span :class="route.fullPath == link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
                   {{ link.name }}
                 </span>
               </div>
