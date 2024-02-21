@@ -29,10 +29,10 @@
                 :name="link.icon"
                 class="mr-0.5"
                 size="18"
-                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+                :color="route.fullPath == link.url ? '#000000' : '#676B5F'"
               />
 
-              <div :class="route.fullPath === link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
+              <div :class="route.fullPath == link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
                 {{ link.name }}
               </div>
             </NuxtLink>
@@ -75,7 +75,7 @@
           </button>
 
           <button
-            @click="$event => !isTopNav ? openMenu('TopNav') : isTopNav = false"
+            @click="!isTopNav ? openMenu('TopNav') : isTopNav = false"
             class="rounded-full md:block hidden"
           >
             <img
@@ -91,7 +91,7 @@
         class="absolute md:block hidden right-4 top-16 border shadow-[0_5px_15px_15pxrgba(0, 0, 0, 0.1)] bg-white w-full max-w-[300px] rounded-2xl"
       >
         <button
-          @click="$event => logout()"
+          @click="logout()"
           class="w-full flex items-center text-gray-600 text-[15px] p-3 hover:text-black"
         >
           <Icon
@@ -107,7 +107,7 @@
     <div
       v-if="!userStore.isMobile"
       id="SecondaryTopNav"
-      class="w-full flex items-center justify-between md:pt-2.5 md:px-2.5"
+      class="w-full md:hidden flex items-center justify-between md:pt-2.5 md:px-2.5"
     >
       <div class="flex items-center justify-between gap-4 shadow-sm bg-white w-full">
         <div class="flex w-full">
