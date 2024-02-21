@@ -4,7 +4,18 @@
       id="AdminPage"
       class="flex h-[100vh] pb-4"
     >
-      AdminPage
+      <div class="lg:w-[calc(100%-500px)] md:w-[calc(100%-330px)] w-full md:pt-20 pt-14">
+        <div class="max-w-[750px] mx-auto pb-24">
+          <button
+            v-if="userStore.isMobile || !showAddLink"
+            @click="$event => showAddLinkFunc()"
+            class="flex items-center justify-center w-full py-3 rounded-full text-white font-semibold bg-[#8828D9] hover:bg-[#6C32B3]"
+            :class="userStore.isMobile ? 'mt-8 text-xl' : 'mt-20 md:mt-8'"
+          >
+            
+          </button>
+        </div>
+      </div>
     </div>
   </AdminLayout>
 </template>
