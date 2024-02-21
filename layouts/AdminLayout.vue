@@ -109,7 +109,10 @@
       id="SecondaryTopNav"
       class="w-full md:hidden flex items-center justify-between md:pt-2.5 md:px-2.5"
     >
-      <div class="flex items-center justify-between gap-4 shadow-sm bg-white w-full">
+      <div
+        class="flex items-center justify-between gap-4 shadow-sm bg-white w-full"
+        :class="route"
+      >
         <div class="flex w-full">
           <div
             v-for="link in linksSecondaryNav"
@@ -118,14 +121,14 @@
             <NuxtLink
               :to="link.url"
               class="relative flex justify-center border-t-black text-sm w-full h-full font-semibold px-1.5 my-[1px] py-[1px] hover:bg-gray-100"
-              :class="link.url === route.fullPath ? 'border-b-2 border-black' : ''"
+              :class="link.url == route.fullPath ? 'border-b-2 border-b-black' : ''"
             >
               <button class="relative pt-[6px]">
                 <Icon
-                v-if="link.icon"
-                :name="link.icon"
-                size="20"
-                :color="route.fullPath === link.url ? '#000000' : '#676B5F'"
+                  v-if="link.icon"
+                  :name="link.icon"
+                  size="20"
+                  :color="route.fullPath == link.url ? '#000000' : '#676B5F'"
                 />
 
                 <img
@@ -138,7 +141,7 @@
                   class="relative text-[13px] text-[#676B5F]"
                   :class="link.img ? '-left-[5px]' : ''"
                 >
-                  <span :class="route.fullPath === link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
+                  <span :class="route.fullPath == link.url ? 'text-[#000000]' : 'text-[#676B5F]'">
                     {{ link.name }}
                   </span>
                 </div>
