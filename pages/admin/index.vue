@@ -14,7 +14,7 @@
           >
             <Icon
               v-if="!userStore.isMobile"
-              name="+"
+              name="mdi:plus"
               class="mr-0.5"
               size="25"
             />
