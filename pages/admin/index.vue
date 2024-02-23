@@ -35,7 +35,7 @@
 
 <script setup>
   import AdminLayout from "~~/layouts/AdminLayout.vue";
-  import { useUserStore } from "~~/store/user";
+  import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
 </script>
