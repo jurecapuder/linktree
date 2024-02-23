@@ -22,6 +22,10 @@
             <span v-if="!userStore.isMobile">
               Add link
             </span>
+
+            <span v-if="userStore.isMobile">
+              Add new link
+            </span>
           </button>
         </div>
       </div>
