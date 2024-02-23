@@ -18,6 +18,10 @@
               class="mr-0.5"
               size="25"
             />
+
+            <span v-if="!userStore.isMobile">
+              Add link
+            </span>
           </button>
         </div>
       </div>
