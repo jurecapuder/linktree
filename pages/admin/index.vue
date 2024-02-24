@@ -27,6 +27,15 @@
               Add new link
             </span>
           </button>
+
+          <AddLink
+            v-if="!userStore.isMobile"
+            @close="$event => showAddLink = false"
+            :class="[
+              {'mt-20 md:mt-8 mb-12 max-h-[1000px] transition-all duration-300 ease-in': showAddLink},
+              {'max-h-0 transition-all duration-300 ease-out': !showAddLink},
+            ]"
+          />
         </div>
       </div>
     </div>
