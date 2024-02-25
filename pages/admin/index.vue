@@ -47,4 +47,7 @@
   import { useUserStore } from "~~/stores/user";
 
   const userStore = useUserStore();
+
+  let selectedInput = ref({ id: 0, str: '' });
+  let showAddLink = ref(false);
 </script>
