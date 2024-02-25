@@ -50,4 +50,9 @@
 
   let selectedInput = ref({ id: 0, str: '' });
   let showAddLink = ref(false);
+
+  const updateInput = (e) => {
+    selectedInput.value.id = e.id;
+    selectedInput.value.str = e.str;
+  }
 </script>
