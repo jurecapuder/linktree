@@ -55,4 +55,12 @@
     selectedInput.value.id = e.id;
     selectedInput.value.str = e.str;
   }
+
+  const showAddLinkFunc = () => {
+    if (userStore.isMobile) {
+      userStore.addLinkOverlay = true;
+    } else {
+      showAddLink.value = true;
+    }
+  }
 </script>
