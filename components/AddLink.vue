@@ -32,6 +32,16 @@
           inputType="text"
           :error="errors && errors.name ? errors.name[0] : ''"
         />
+
+        <div class="py-1" />
+
+        <TextInput
+          class="w-full"
+          placeholder="URL"
+          v-model:input="url"
+          inputType="text"
+          :error="errors && errors.url ? errors.url[0] : ''"
+        />
       </div>
     </form>
   </div>
