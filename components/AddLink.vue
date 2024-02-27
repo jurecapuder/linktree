@@ -19,6 +19,21 @@
         />
       </button>
     </div>
+
+    <form
+      @submit.prevent="$event => submit()"
+      class="flex items-center gap-4 w-full pt-2 p-6"
+    >
+      <div class="w-full">
+        <TextInput
+          class="w-full"
+          placeholder="Name"
+          v-model:input="name"
+          inputType="text"
+          :error="errors && errors.name ? errors.name[0] : ''"
+        />
+      </div>
+    </form>
   </div>
 </template>
 
