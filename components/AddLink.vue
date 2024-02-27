@@ -55,7 +55,7 @@
             : 'bg-[#EFF0EA] text-[#A7AAA2]'
         "
       >
-
+        Add
       </button>
     </form>
   </div>
