@@ -43,6 +43,20 @@
           :error="errors && errors.url ? errors.url[0] : ''"
         />
       </div>
+
+      <button
+        type="submit"
+        :disabled="!name && !url"
+        @click="$event => addLink()"
+        class="rounded-full p-3 px-6"
+        :class="
+          name && url
+            ? 'bg-[#8228D9] hover:bg-[#6C21B3] text-white'
+            : 'bg-[#EFF0EA] text-[#A7AAA2]'
+        "
+      >
+
+      </button>
     </form>
   </div>
 </template>
