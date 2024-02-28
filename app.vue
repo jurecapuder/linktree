@@ -1,6 +1,11 @@
 <template>
   <VitePwaManifest />
 
+  <div
+    v-if="bgIsGray"
+    class="bg-[#F3F3F1] fixed w-full h-full z-[-1]"
+  />
+
   <NuxtPage />
 </template>
 
