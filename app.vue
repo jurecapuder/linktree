@@ -28,6 +28,8 @@
     isPreviewOverlay.value = false;
     isMobile.value = false;
 
+    checkPath(route.fullPath)
+
     if ("ontouchstart" in window) {
       isMobile.value = true;
     }
@@ -44,5 +46,14 @@
       { id: 7, color: 'bg-gradient-to-t from-lime-500 via-indigo-700 to-amber-500', text: 'text-white', name: 'Soft Horizon' },
       { id: 8, color: 'bg-gradient-to-t from-gray-800 to-emerald-500', text: 'text-white', name: 'Tinted Lake' },
     ]
+  }
+
+  const checkPath = (path) => {
+    if (path == "/" || path == "/register") {
+      bgIsGray.value = false;
+      return
+    } else {
+      bgIsGray.value = true;
+    }
   }
 </script>
