@@ -62,5 +62,9 @@
 </template>
 
 <script setup>
+  import { useUserStore } from "~~/stores/user";
 
+  const userStore = useUserStore();
+
+  const emit = defineEmits(["close"]);
 </script>
