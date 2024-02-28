@@ -67,4 +67,8 @@
   const userStore = useUserStore();
 
   const emit = defineEmits(["close"]);
+
+  let name = ref("");
+  let url = ref("");
+  let errors = ref(null);
 </script>
