@@ -71,4 +71,6 @@
   let name = ref("");
   let url = ref("");
   let errors = ref(null);
+
+  const addLink = async () => {};
 </script>
