@@ -17,6 +17,18 @@
             maxlength="18"
             class="w-full text-sm font-semibold focus:outline-none"
           />
+
+          <div
+            v-else
+            class="flex items-center w-full"
+          >
+            <div
+              class="font-semibold mr-2 cursor-pointer"
+              :class="isMobile ? 'text-xl' : 'text-sm'"
+            >
+              TESTING
+            </div>
+          </div>
         </div>
       </div>
     </div>
