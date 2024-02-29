@@ -28,6 +28,13 @@
             >
               TESTING
             </div>
+
+            <Icon
+              class="cursor-pointer"
+              name="octicon:pencil-24"
+              :size="isMobile ? '23' : '17'"
+              color="#676B5F"
+            />
           </div>
         </div>
       </div>
