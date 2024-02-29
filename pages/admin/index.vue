@@ -36,6 +36,8 @@
               {'max-h-0 transition-all duration-300 ease-out': !showAddLink},
             ]"
           />
+
+          <LinkBox />
         </div>
       </div>
     </div>
