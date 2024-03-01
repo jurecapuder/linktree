@@ -48,6 +48,38 @@
           />
         </div>
       </div>
+
+      <div class="flex items-center justify-between py-1">
+        <div class="flex items-center w-full">
+          <input
+            v-if="true"
+            id="editLinkInput"
+            type="text"
+            v-model="url"
+            class="w-full text-sm font-semibold focus:outline-none"
+          />
+
+          <div
+            v-else
+            class="flex items-center w-[calc(100%-2px)]"
+          >
+            <div
+              class="mr-2 truncate cursor-pointer"
+              :class="isMobile ? 'text-xl' : 'text-sm'"
+            >
+              TESTING URL
+            </div>
+
+            <Icon
+              class="cursor-pointer min-w-[17px]"
+              :class="isMobile ? 'min-w-[23px]' : 'min-w-[17px]'"
+              name="octicon:pencil-24"
+              :size="isMobile ? '23' : '17'"
+              color="#676B5F"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
