@@ -37,6 +37,16 @@
             />
           </div>
         </div>
+
+        <div class="flex items-center">
+          <Icon
+            class="cursor-pointer"
+            :class="isMobile ? 'min-w-[23px]' : 'min-w-[17px]'"
+            name="mdi:bell-outline"
+            :size="isMobile ? '25' : '20'"
+            color="#676B5F"
+          />
+        </div>
       </div>
     </div>
   </div>
