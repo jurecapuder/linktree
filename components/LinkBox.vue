@@ -95,6 +95,26 @@
             />
           </div>
         </div>
+
+        <div
+          v-if="!isMobile"
+          class="flex items-center"
+        >
+          <div class="flex items-center px-1.5 py-[2px] rounded-md relative">
+            <button
+              @click="$event => isDelete = true; isUploadImage = false"
+              class="flex items-center px-1.5 py-[2px] absolute -right-[6px] rounded-md"
+              :class="isDelete ? 'bg-[#8228D9]' : 'hover:bg-gray-200'"
+            >
+              <Icon
+                class="cursor-pointer"
+                name="carbon:trash-can"
+                size="20"
+                :color="isDelete ? '#FFFFFF' : '#676B5F'"
+              />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
