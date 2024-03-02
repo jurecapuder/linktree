@@ -126,7 +126,17 @@
         {'max-h-0 transition-all duration-200 ease-out': !isDelete}
       ]"
     >
-      
+      <button
+        @click="$event => isDelete = false"
+        class="relative w-full bg-[#DFE2D9] py-1.5"
+      >
+        <Icon
+          name="mdi:close"
+          class="absolute right-1 top-[6px] cursor-pointer"
+          size="20"
+          color="#45494A"
+        />
+      </button>
     </div>
   </div>
 </template>
