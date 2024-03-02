@@ -86,7 +86,14 @@
           <div
             class="flex items-center px-1.5 py-[2px] absolute -left-[6px] rounded-md"
             :class="isUploadImage ? 'bg-[#8228D9]' : 'hover:bg-gray-200'"
-          ></div>
+          >
+            <Icon
+              class="cursor-pointer"
+              name="icon-park-twotone:collect-picture"
+              :size="isMobile ? '23' : '17'"
+              :color="isUploadImage ? '#FFFFFF' : '#676B5F'"
+            />
+          </div>
         </div>
       </div>
     </div>
