@@ -80,6 +80,15 @@
           </div>
         </div>
       </div>
+
+      <div class="flex items-center justify-between py-1 mt-4">
+        <div class="flex items-center w-full relative">
+          <div
+            class="flex items-center px-1.5 py-[2px] absolute -left-[6px] rounded-md"
+            :class="isUploadImage ? 'bg-[#8228D9]' : 'hover:bg-gray-200'"
+          ></div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
