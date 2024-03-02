@@ -117,6 +117,17 @@
         </div>
       </div>
     </div>
+
+    <div
+      id="FooterLinkDeleteSection"
+      class="overflow-hidden"
+      :class="[
+        {'max-h-[180px] transition-all duration-300 ease-in': isDelete},
+        {'max-h-0 transition-all duration-200 ease-out': !isDelete}
+      ]"
+    >
+      
+    </div>
   </div>
 </template>
 
