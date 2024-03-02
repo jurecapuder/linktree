@@ -141,6 +141,10 @@
           Delete
         </div>
       </button>
+
+      <div class="flex items-center justify-center pt-3">
+        Delete this forever?
+      </div>
     </div>
   </div>
 </template>
