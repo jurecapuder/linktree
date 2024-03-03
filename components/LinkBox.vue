@@ -145,6 +145,17 @@
       <div class="flex items-center justify-center pt-3">
         Delete this forever?
       </div>
+
+      <div class="w-full px-4 py-3">
+        <div class="flex items-center gap-2 w-full">
+          <button
+            @click="$event => deleteLink()"
+            class="flex items-center border justify-center w-full py-3 rounded-full text-black font-semibold hover:bg-gray-100"
+          >
+            
+          </button>
+        </div>
+      </div>
     </div>
   </div>
 </template>
