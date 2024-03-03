@@ -157,6 +157,15 @@
         </div>
       </div>
     </div>
+
+    <div
+      id="FooterLinkBoxSection"
+      class="overflow-hidden"
+      :class="[
+        {'max-h-[180px] transition-all duration-300 ease-in': isUploadImage},
+        {'max-h-0 transition-all duration-200 ease-out': !isUploadImage}
+      ]"
+    ></div>
   </div>
 </template>
 
