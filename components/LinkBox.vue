@@ -174,6 +174,10 @@
           size="20"
           color="#45494A"
         />
+
+        <div class="text-center text-sm font-bold text-[#45494A]">
+          Add Thumbnail
+        </div>
       </div>
     </div>
   </div>
