@@ -165,7 +165,17 @@
         {'max-h-[180px] transition-all duration-300 ease-in': isUploadImage},
         {'max-h-0 transition-all duration-200 ease-out': !isUploadImage}
       ]"
-    ></div>
+    >
+      <div class="relative w-full bg-[#DFE2D9] py-1.5">
+        <Icon
+          @click="$event => isUploadImage = false"
+          name="mdi:close"
+          class="absolute right-1 top-[6px] cursor-pointer"
+          size="20"
+          color="#45494A"
+        />
+      </div>
+    </div>
   </div>
 </template>
 
