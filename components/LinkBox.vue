@@ -185,6 +185,15 @@
           class="rounded-lg w-[80px] aspect-square"
           src="https://picsum.photos/id/8/300/320"
         />
+
+        <div class="w-full pl-3">
+          <button
+            @click="$event => openCropper = true"
+            class="flex items-center justify-center w-full py-3 rounded-full text-white font-semibold bg-[#8228D9] hover:bg-[#6C21B3] mb-2"
+          >
+            Change
+          </button>
+        </div>
       </div>
     </div>
   </div>
