@@ -212,4 +212,15 @@
     selectedId: { type: Number, default: 0 },
     selectedStr: { type: String, default: "" }
   })
+
+  const { link, selectedId, selectedStr } = toRefs(props);
+
+  const emit = defineEmits(["updatedInput"]);
+
+  let name = ref("");
+  let url = ref("");
+  let data = ref(null);
+  let isDelete = ref(false);
+  let openCropper = ref(false);
+  let isUploadImage = ref(false);
 </script>
