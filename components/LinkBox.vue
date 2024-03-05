@@ -227,5 +227,14 @@
   onMounted(() => {
     name.value = link.value.name;
     url.value = link.value.url;
+
+    document.addEventListener("mouseup", function (e) {
+      let editNameInput = document.getElementById(`editNameInput-${link.value.id}`);
+
+      if (editNameInput && !editNameInput.contains(e.target) && selectedStr.value == "isName" && link.value.id == selectedId.value) {
+        editNameInput.blur();
+        emit("updatedInput", { id: 0, str: "" });
+      }
+    })
   })
 </script>
