@@ -223,4 +223,9 @@
   let isDelete = ref(false);
   let openCropper = ref(false);
   let isUploadImage = ref(false);
+
+  onMounted(() => {
+    name.value = link.value.name;
+    url.value = link.value.url;
+  })
 </script>
