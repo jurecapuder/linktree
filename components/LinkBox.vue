@@ -206,4 +206,10 @@
   const userStore = useUserStore();
 
   const { isMobile, updatedLinkId } = storeToRefs(userStore);
+
+  const props = defineProps({
+    link: Object,
+    selectedId: { type: Number, default: 0 },
+    selectedStr: { type: String, default: "" }
+  })
 </script>
