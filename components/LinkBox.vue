@@ -236,5 +236,14 @@
         emit("updatedInput", { id: 0, str: "" });
       }
     })
+
+    document.addEventListener("mouseup", function (e) {
+      let editLinkInput = document.getElementById(`editLinkInput-${link.value.id}`);
+
+      if (editLinkInput && !editLinkInput.contains(e.target) && selectedStr.value == "isLink" && link.value.id == selectedId.value) {
+        editLinkInput.blur();
+        emit("updatedInput", { id: 0, str: "" });
+      }
+    })
   })
 </script>
