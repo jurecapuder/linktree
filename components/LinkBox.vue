@@ -249,5 +249,15 @@
 
   const updateLink = useDebounce(async () => {
     //
-  }, 500)
+  }, 500);
+
+  const changeInput = (str, linkIdNameString) => {
+    if (selectedId.value == link.value.id && selectedStr.value == str) {
+      setTimeout(() => {
+        document.getElementById(`${linkIdNameString}-${link.value.id}`).focus();
+
+        return
+      }, 100)
+    }
+  }
 </script>
