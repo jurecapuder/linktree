@@ -260,4 +260,12 @@
       }, 100)
     }
   }
+
+  const editName = (selectedId, selectedStr) => {
+    if (userStore.isMobile) {
+      userStore.updatedLinkId = selectedId;
+
+      return false;
+    }
+  }
 </script>
