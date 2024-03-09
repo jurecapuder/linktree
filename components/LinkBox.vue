@@ -299,7 +299,7 @@
     //
   }
 
-  const deleteLinkk = async () => {
+  const deleteLink = async () => {
     let res = confirm("Are you sure you want to delete this link?")
   }
 </script>
