@@ -284,4 +284,14 @@
 
     return false;
   }
+
+  const editImage = () => {
+    if (userStore.isMobile) {
+      userStore.updatedLinkId = link.value.id;
+
+    } else {
+      isUploadImage.value = true;
+      isDelete.value = false;
+    }
+  }
 </script>
