@@ -294,4 +294,8 @@
       isDelete.value = false;
     }
   }
+
+  const updateLinkImage = async () => {
+    //
+  }
 </script>
