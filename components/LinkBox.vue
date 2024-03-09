@@ -302,4 +302,10 @@
   const deleteLink = async () => {
     let res = confirm("Are you sure you want to delete this link?")
   }
+
+  watch(() => name.value, () => {
+    if (name.value && name.value !== link.value.name) {
+      updateLink();
+    }
+  })
 </script>
