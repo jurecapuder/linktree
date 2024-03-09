@@ -314,4 +314,11 @@
       updateLink();
     }
   })
+
+  watch(() => selectedId.value, () => {
+    if (selectedId.value) {
+      changeInput('isName', 'editNameInput');
+      changeInput('isLink', 'editLinkInput');
+    }
+  })
 </script>
