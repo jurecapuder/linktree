@@ -321,4 +321,11 @@
       changeInput('isLink', 'editLinkInput');
     }
   })
+
+  watch(() => selectedStr.value, () => {
+    if (selectedStr.value) {
+      changeInput('isName', 'editNameInput');
+      changeInput('isLink', 'editLinkInput');
+    }
+  })
 </script>
