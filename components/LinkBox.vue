@@ -308,4 +308,10 @@
       updateLink();
     }
   })
+
+  watch(() => url.value, () => {
+    if (url.value && url.value !== link.value.url) {
+      updateLink();
+    }
+  })
 </script>
