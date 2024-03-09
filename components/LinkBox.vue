@@ -272,4 +272,16 @@
 
     return false;
   }
+
+  const editLink = (selectedId, selectedStr) => {
+    if (userStore.isMobile) {
+      userStore.updatedLinkId = selectedId;
+
+      return false;
+    } else if (selectedId == link.value.id && selectedStr == 'isLink') {
+      return true;
+    }
+
+    return false;
+  }
 </script>
