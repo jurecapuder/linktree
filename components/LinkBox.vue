@@ -266,6 +266,10 @@
       userStore.updatedLinkId = selectedId;
 
       return false;
+    } else if (selectedId == link.value.id && selectedStr == 'isName') {
+      return true;
     }
+
+    return false;
   }
 </script>
