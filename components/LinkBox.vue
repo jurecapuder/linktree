@@ -298,4 +298,8 @@
   const updateLinkImage = async () => {
     //
   }
+
+  const deleteLinkk = async () => {
+    let res = confirm("Are you sure you want to delete this link?")
+  }
 </script>
