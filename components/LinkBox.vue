@@ -328,4 +328,10 @@
       changeInput('isLink', 'editLinkInput');
     }
   })
+
+  watch(() => updatedLinkId.value, (val) => {
+    if (!val) {
+      emit("updatedInput", { id: 0, str: "" });
+    }
+  })
 </script>
