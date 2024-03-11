@@ -334,4 +334,6 @@
       emit("updatedInput", { id: 0, str: "" });
     }
   })
+
+  watch(() => data.value, async () => await updateLinkImage());
 </script>
