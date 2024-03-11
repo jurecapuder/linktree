@@ -23,14 +23,15 @@
             class="flex items-center w-full"
           >
             <div
-              @click="$event => name = link.name; $emis('updatedInput', { id: 0, str: 'isName' })"
+              @click="$event => name = link.name; $emit('updatedInput', { id: 0, str: 'isName' })"
               class="font-semibold mr-2 cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
-              TESTING
+               {{ link.name }}
             </div>
 
             <Icon
+              @click="$event => $emit('updatedInput', { id: link.id, str: 'isName' })"
               class="cursor-pointer"
               name="octicon:pencil-24"
               :size="isMobile ? '23' : '17'"
@@ -53,8 +54,8 @@
       <div class="flex items-center justify-between py-1">
         <div class="flex items-center w-full">
           <input
-            v-if="true"
-            id="editLinkInput"
+            v-if="editLink(selectedId, selectedStr)"
+            :id="`editLinkInput-${link.id}`"
             type="text"
             v-model="url"
             class="w-full text-sm font-semibold focus:outline-none"
@@ -65,6 +66,7 @@
             class="flex items-center w-[calc(100%-2px)]"
           >
             <div
+              @click="$event => url = link.url; $emit('updatedInput', { id: link.id, str: 'isLink' })"
               class="mr-2 truncate cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
