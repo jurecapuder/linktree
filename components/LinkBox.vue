@@ -10,7 +10,7 @@
       <div class="flex items-center justify-between py-1">
         <div class="flex items-center w-full">
           <input
-            v-if="true"
+            v-if="editName(selectedId, selectedStr)"
             id="editNameInput"
             type="text"
             v-model="name"
