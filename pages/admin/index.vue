@@ -37,7 +37,14 @@
             ]"
           />
 
-          <LinkBox />
+          <LinkBox
+            v-if="link"
+            :link="link"
+            :selectedId="selectedInput.id"
+            :selectedStr="selectedInput.str"
+            @updateInput="updateInput"
+            class="mt-6"
+          />
         </div>
       </div>
     </div>
