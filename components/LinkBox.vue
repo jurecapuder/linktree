@@ -70,10 +70,11 @@
               class="mr-2 truncate cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
-              TESTING URL
+              {{ link.url }}
             </div>
 
             <Icon
+              @click="$event => $emit('updatedInput', { id: link.id, str: 'isLink' })"
               class="cursor-pointer min-w-[17px]"
               :class="isMobile ? 'min-w-[23px]' : 'min-w-[17px]'"
               name="octicon:pencil-24"
@@ -91,6 +92,7 @@
             :class="isUploadImage ? 'bg-[#8228D9]' : 'hover:bg-gray-200'"
           >
             <Icon
+              @click="$event => editImage()"
               class="cursor-pointer"
               name="icon-park-twotone:collect-picture"
               :size="isMobile ? '23' : '17'"
