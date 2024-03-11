@@ -11,7 +11,7 @@
         <div class="flex items-center w-full">
           <input
             v-if="editName(selectedId, selectedStr)"
-            id="editNameInput"
+            :id="`editNameInput-${link.id}`"
             type="text"
             v-model="name"
             maxlength="18"
@@ -23,6 +23,7 @@
             class="flex items-center w-full"
           >
             <div
+              @click="$event => name = link.name; $emis('updatedInput', { id: 0, str: 'isName' })"
               class="font-semibold mr-2 cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
