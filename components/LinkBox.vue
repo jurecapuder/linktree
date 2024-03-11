@@ -1,6 +1,6 @@
 <template>
   <div
-    id="LinkBox"
+    :id="`LinkBox${link.id}`"
     class="w-full bg-white rounded-3xl"
   >
     <div
