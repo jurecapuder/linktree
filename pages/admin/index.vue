@@ -55,6 +55,13 @@
   import AdminLayout from "~~/layouts/AdminLayout.vue";
   import { useUserStore } from "~~/stores/user";
 
+  const fakeLink = {
+    id: 1,
+    name: 'YouTube Channel',
+    url: 'https://www.youtube.com/channel/UC3R0xv8XjyJ6qF9tW3J3YJQ',
+    image: 'https://picsum.photos/id/8/300/320' 
+  }
+
   const userStore = useUserStore();
 
   let selectedInput = ref({ id: 0, str: '' });
