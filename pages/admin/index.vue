@@ -37,14 +37,16 @@
             ]"
           />
 
-          <LinkBox
+          <div v-for="link in fakeLink" class="mt-4">
+            <LinkBox
             v-if="link"
             :link="link"
             :selectedId="selectedInput.id"
             :selectedStr="selectedInput.str"
             @updateInput="updateInput"
             class="mt-6"
-          />
+            />
+          </div>
         </div>
       </div>
     </div>
