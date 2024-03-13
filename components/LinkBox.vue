@@ -23,7 +23,7 @@
             class="flex items-center w-full"
           >
             <div
-              @click="$event => name = link.name; $emit('updatedInput', { id: 0, str: 'isName' })"
+              @click="$event => name = link.name, $emit('updatedInput', { id: 0, str: 'isName' })"
               class="font-semibold mr-2 cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
@@ -66,7 +66,7 @@
             class="flex items-center w-[calc(100%-2px)]"
           >
             <div
-              @click="$event => url = link.url; $emit('updatedInput', { id: link.id, str: 'isLink' })"
+              @click="$event => url = link.url, $emit('updatedInput', { id: link.id, str: 'isLink' })"
               class="mr-2 truncate cursor-pointer"
               :class="isMobile ? 'text-xl' : 'text-sm'"
             >
@@ -107,7 +107,7 @@
         >
           <div class="flex items-center px-1.5 py-[2px] rounded-md relative">
             <button
-              @click="$event => isDelete = true; isUploadImage = false"
+              @click="$event => isDelete = true, isUploadImage = false"
               class="flex items-center px-1.5 py-[2px] absolute -right-[6px] rounded-md"
               :class="isDelete ? 'bg-[#8228D9]' : 'hover:bg-gray-200'"
             >
