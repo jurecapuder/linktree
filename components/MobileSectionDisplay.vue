@@ -10,6 +10,13 @@
                 class="w-full h-full absolute lg:max-w-[220px] max-w-[195px] rounded-3xl z-0"
                 :class="userStore.theme.color"
             />
+
+            <div class="h-full mx-auto w-full overflow-auto z-10">
+                <img
+                    class="rounded-full min-w-[60px] w-[60px] mx-auto mt-8"
+                    :src="userStore.image"
+                />
+            </div>
         </div>
     </div>
 </template>
