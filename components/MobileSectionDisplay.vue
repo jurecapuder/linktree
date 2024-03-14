@@ -5,6 +5,11 @@
                 class="absolute z-10 pointer-events-none select-none"
                 src="~/assets/images/mobile-case.png"
             />
+
+            <div
+                class="w-full h-full absolute lg:max-w-[220px] max-w-[195px] rounded-3xl z-0"
+                :class="userStore.theme.color"
+            />
         </div>
     </div>
 </template>
