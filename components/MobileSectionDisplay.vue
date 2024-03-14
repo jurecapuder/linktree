@@ -22,5 +22,7 @@
 </template>
 
 <script>
+    import { useUserStore } from "~~/stores/user";
 
+    const userStore = useUserStore();
 </script>
