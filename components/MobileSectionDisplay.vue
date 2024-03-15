@@ -8,7 +8,7 @@
 
             <div
                 class="w-full h-full absolute lg:max-w-[220px] max-w-[195px] rounded-3xl z-0"
-                :class="userStore.theme.color"
+                :class="userStore.theme"
             />
 
             <div class="h-full mx-auto w-full overflow-auto z-10">
