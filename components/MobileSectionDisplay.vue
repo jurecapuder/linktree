@@ -16,6 +16,13 @@
                     class="rounded-full min-w-[60px] w-[60px] mx-auto mt-8"
                     :src="userStore.image"
                 />
+
+                <div
+                    class="text-center text-sm font-semibold mt-4 break-words"
+                    :class="userStore.theme"
+                >
+                    @jurecapuder
+                </div>
             </div>
         </div>
     </div>
