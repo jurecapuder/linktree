@@ -26,10 +26,10 @@
 
                 <div
                     class="text-center text-[8px] font-semibold mt-2"
-                    :class="userStore.theme.text"
+                    :class="userStore.theme"
                 >
                     <div class="px-8 break-words">
-                        {{ userStore.bio }}
+                        This is the bio section
                     </div>
                 </div>
             </div>
