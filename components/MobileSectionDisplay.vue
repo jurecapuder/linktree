@@ -23,6 +23,15 @@
                 >
                     @jurecapuder
                 </div>
+
+                <div
+                    class="text-center text-[8px] font-semibold mt-2"
+                    :class="userStore.theme.text"
+                >
+                    <div class="px-8 break-words">
+                        {{ userStore.bio }}
+                    </div>
+                </div>
             </div>
         </div>
     </div>
