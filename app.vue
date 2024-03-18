@@ -7,6 +7,8 @@
   />
 
   <NuxtPage />
+
+  <isPreviewOverlay v-if="!isMobile && isPreviewOverlay" />
 </template>
 
 <script setup>
