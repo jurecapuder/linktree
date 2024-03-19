@@ -16,6 +16,36 @@
                     >
                 </button>
             </div>
+
+            <div class="flex items-center justify-between gap-3">
+                <button class="flex items-center text-sm font-semibold p-2 rounded-full hover:bg-gray-100">
+                    <Icon
+                    name="healthicons:megaphone-outline"
+                    class="mr-0.5" 
+                    size="22"
+                    />
+                </button>
+
+                <button class="flex items-center font-semibold px-3 py-2 rounded-full bg-gray-100">
+                    <Icon
+                    name="mdi:lightning-bolt"
+                    class="mr-0.5" 
+                    size="18"
+                    />
+                    
+                    Upgrade
+                </button>
+
+                <button class="flex items-center font-semibold px-3 py-2 rounded-full border hover:bg-gray-100">
+                    <Icon
+                    name="teenyicons:upload-solid"
+                    class="mr-1.5"
+                    size="18"
+                    />
+                    
+                    Share
+                </button>
+            </div>
         </div>
     </div>
 </template>
