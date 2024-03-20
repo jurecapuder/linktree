@@ -49,6 +49,20 @@
                 </div>
             </div>
         </div>
+
+        <div
+            id="PreviewOverlayContentSection"
+            class="relative w-full h-full mx-auto pt-24"
+        >
+            <div class="mx-auto mb-16 w-full p-3">
+                <div class="h-full mx-auto w-full overflow-auto z-10">
+                    <img
+                        class="rounded-full min-w-[100px] w-[100px] mx-auto"
+                        :src="userStore.image"
+                    >
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
