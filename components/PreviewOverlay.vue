@@ -60,6 +60,13 @@
                         class="rounded-full min-w-[100px] w-[100px] mx-auto"
                         :src="userStore.image"
                     >
+
+                    <div
+                        class="text-center text-xl font-semibold mt-4"
+                        :class="userStore.theme"
+                    >
+                        @jurecapuder
+                    </div>
                 </div>
             </div>
         </div>
