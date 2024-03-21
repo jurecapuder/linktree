@@ -67,6 +67,29 @@
                     >
                         @jurecapuder
                     </div>
+
+                    <div
+                        class="text-center text-[8px] font-semibold mt-2"
+                        :class="userStore.theme"
+                    >
+                        <div class="px-8 break-words">
+                            This is the bio section
+                        </div>
+                    </div>
+
+                    <div v-for="link in fakeLink">
+                        <a
+                            :href="link.url"
+                            target="_blank"
+                            class="flex items-center relative w-[calc(100%-10px)] mx-auto border bg-white mt-2 p-1 rounded-xl"
+                        >
+                            <div class="absolute w-full">
+                                <div class="max-w-[70%] w-full mx-auto text-[10px] text-center">
+                                    {{ link.name }}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
