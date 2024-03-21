@@ -83,6 +83,11 @@
                             target="_blank"
                             class="flex items-center relative w-[calc(100%-10px)] mx-auto border bg-white mt-4 p-1 rounded-lg"
                         >
+                            <img 
+                                class="rounded-lg h-[45px] aspect-square"
+                                :src="link.image"
+                            >
+                            
                             <div class="absolute w-full">
                                 <div class="max-w-[70%] w-full mx-auto text-[10px] text-center">
                                     {{ link.name }}
