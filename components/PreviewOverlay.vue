@@ -69,10 +69,10 @@
                     </div>
 
                     <div
-                        class="text-center text-[8px] font-semibold mt-2"
+                        class="text-center font-light mt-2"
                         :class="userStore.theme"
                     >
-                        <div class="px-8 break-words">
+                        <div class="px-8">
                             This is the bio section
                         </div>
                     </div>
@@ -81,7 +81,7 @@
                         <a
                             :href="link.url"
                             target="_blank"
-                            class="flex items-center relative w-[calc(100%-10px)] mx-auto border bg-white mt-2 p-1 rounded-xl"
+                            class="flex items-center relative w-[calc(100%-10px)] mx-auto border bg-white mt-4 p-1 rounded-lg"
                         >
                             <div class="absolute w-full">
                                 <div class="max-w-[70%] w-full mx-auto text-[10px] text-center">
