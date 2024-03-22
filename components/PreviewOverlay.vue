@@ -88,10 +88,8 @@
                                 :src="link.image"
                             >
                             
-                            <div class="absolute w-full">
-                                <div class="max-w-[70%] w-full mx-auto text-[10px] text-center">
-                                    {{ link.name }}
-                                </div>
+                            <div class="absolute text-[16px] text-center w-full">
+                                {{ link.name }}
                             </div>
                         </a>
                     </div>
