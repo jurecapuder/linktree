@@ -5,7 +5,14 @@
     >
         <div class="lg:w-[calc(100%-500px)] md:w-[calc(100%-330px)] w-full md:pt-20 pt-14">
             <div class="max-w-[750px] mx-auto pb-24">
-                
+                <div id="ProfileSection">
+                    <div
+                        class="font-semibold pb-4"
+                        :class="userStore.isMobile ? 'mt-8 text-2xl' : 'mt-20 md:mt-8 text-xl'"
+                    >
+                        Profile
+                    </div>
+                </div>
             </div>
         </div>
     </AdminLayout>
