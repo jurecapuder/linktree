@@ -93,8 +93,25 @@
                             </div>
                         </a>
                     </div>
+
+                    <div class="pb-28" />
                 </div>
             </div>
+        </div>
+
+        <div
+            id="PreviewButton"
+            class="fixed bottom-10 w-full flex items-center justify-center"
+        >
+            <button
+                @click="$event => userStore.isPreviewOverlay = false"
+                class="flex items-center justify-center p-2.5 bg-[#DFE2D9] rounded-full"
+            >
+                <Icon
+                    name="mdi:close"
+                    size="30"
+                />
+            </button>
         </div>
     </div>
 </template>
