@@ -14,7 +14,7 @@
             <div class="h-full mx-auto w-full overflow-auto z-10">
                 <img
                     class="rounded-full min-w-[60px] w-[60px] mx-auto mt-8"
-                    :src="userStore.image"
+                    src="https://picsum.photos/id/8/300/320"
                 />
 
                 <div
