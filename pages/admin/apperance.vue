@@ -51,6 +51,10 @@
                             class="w-full mt-4 bg-[#EFF0EB] text-gray-800 border-2 text-sm border-[#EFF0EB] rounded-xl py-3.5 px-3 placeholder-gray-500 resize-none focus:outline-none"
                         >
                         </textarea>
+
+                        <div class="flex items-center justify-end text-[#676B5F]">
+                            {{ bioLengthComputer }}/80
+                        </div>
                     </div>
                 </div>
             </div>
