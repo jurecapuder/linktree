@@ -39,6 +39,18 @@
                                 :error="errors && errors.name ? errors.name[0] : ''"
                             />
                         </div>
+
+                        <textarea
+                            v-model="bio"
+                            rows="4"
+                            maxlength="80"
+                            placeholder="Bio"
+                            @focus="$event => isBioFocused = true"
+                            @blur="$event => isBioFocused = false"
+                            :class="isBioFocused ? 'border-gray-900' : ''"
+                            class="w-full mt-4 bg-[#EFF0EB] text-gray-800 border-2 text-sm border-[#EFF0EB] rounded-xl py-3.5 px-3 placeholder-gray-500 resize-none focus:outline-none"
+                        >
+                        </textarea>
                     </div>
                 </div>
             </div>
