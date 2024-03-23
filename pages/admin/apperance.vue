@@ -29,6 +29,16 @@
                                 </button>
                             </div>
                         </div>
+
+                        <div class="mt-4">
+                            <TextInput
+                                placeholder="Profile Title"
+                                v-model:input="name"
+                                inputType="text"
+                                :max="25"
+                                :error="errors && errors.name ? errors.name[0] : ''"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
