@@ -57,6 +57,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div id="ThemeSection">
+                    <div
+                        class="font-semibold pb-4"
+                        :class="userStore.isMobile ? 'mt-8 text-2xl' : 'mt-20 md:mt-8 text-xl'"
+                    >
+                        Themes
+                    </div>
+                </div>
             </div>
         </div>
     </AdminLayout>
