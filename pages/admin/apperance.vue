@@ -81,6 +81,10 @@
                                             class="absolute left-0 top-0 h-full w-full z-0"
                                             :class="item.color"
                                         />
+
+                                        <div class="relative z-10 pt-9">
+                                            <div class="rounded-full mx-auto w-12 h-12 bg-[#EFF0EA] bg-opacity-70" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
