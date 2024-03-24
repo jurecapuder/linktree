@@ -93,6 +93,10 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="text-center">
+                                    {{ item.name }}
+                                </div>
                             </div>
                         </div>
                     </div>
