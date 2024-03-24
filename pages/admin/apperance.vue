@@ -65,6 +65,27 @@
                     >
                         Themes
                     </div>
+
+                    <div class="w-full bg-white rounded-3xl p-6">
+                        <div class="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-2 gap-4">
+                            <div v-for="item in userStore.colors">
+                                <div
+                                    class="border-2 border-gray-500 rounded-lg aspect-[2/3] border-dashed cursor-pointer"
+                                    :class="userStore.theme_id == item.id ? 'transition-all duration-150 ease-in p-2' : 'transition-all duration-150 ease-out p-0'"
+                                >
+                                    <div
+                                        @click="$event => updateTheme(item.id)"
+                                        class="relative rounded-xl h-full mx-auto"
+                                    >
+                                        <div
+                                            class="absolute left-0 top-0 h-full w-full z-0"
+                                            :class="item.color"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
