@@ -84,6 +84,8 @@
 
                                         <div class="relative z-10 pt-9">
                                             <div class="rounded-full mx-auto w-12 h-12 bg-[#EFF0EA] bg-opacity-70" />
+
+                                            <div class="w-[calc(100%-20px)] mx-auto rounded-full h-6 mt-4 bg-[#EFF0EA]  bg-opacity-70" />
                                         </div>
                                     </div>
                                 </div>
