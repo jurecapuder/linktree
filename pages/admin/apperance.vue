@@ -130,4 +130,8 @@
     const updateTheme = async (themeId) => {
         //
     }
+
+    const updateUserDetails = useDebounce(async () => {
+        //
+    });
 </script>
