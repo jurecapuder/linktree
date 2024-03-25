@@ -121,4 +121,9 @@
     let errors = ref("");
     let isBioFocused = ref("");
     let openCropper = ref("");
+
+    onMounted(() => {
+        name.value = userStore.name;
+        bio.value = userStore.bio;
+    });
 </script>
