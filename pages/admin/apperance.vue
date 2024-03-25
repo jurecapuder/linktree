@@ -126,4 +126,8 @@
         name.value = userStore.name;
         bio.value = userStore.bio;
     });
+
+    const updateTheme = async (themeId) => {
+        //
+    }
 </script>
