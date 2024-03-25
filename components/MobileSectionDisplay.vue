@@ -58,7 +58,7 @@
     </div>
 </template>
 
-<script>
+<script setup>
     import { useUserStore } from "~~/stores/user";
 
     const userStore = useUserStore();
