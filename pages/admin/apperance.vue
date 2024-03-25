@@ -114,4 +114,11 @@
     import { useUserStore } from "~~/stores/user";
 
     const userStore = useUserStore();
+    
+    let name = ref("");
+    let bio = ref("");
+    let data = ref("");
+    let errors = ref("");
+    let isBioFocused = ref("");
+    let openCropper = ref("");
 </script>
