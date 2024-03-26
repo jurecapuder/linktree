@@ -134,4 +134,8 @@
     const updateUserDetails = useDebounce(async () => {
         //
     });
+
+    const bioLengthComputer = computed(() => {
+        return !bio.value ? 0 : bio.value.length;
+    });
 </script>
