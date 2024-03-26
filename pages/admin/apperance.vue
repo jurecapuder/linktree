@@ -129,7 +129,7 @@
 
     const updateTheme = async (themeId) => {
         //
-    }
+    };
 
     const updateUserDetails = useDebounce(async () => {
         //
@@ -138,4 +138,10 @@
     const bioLengthComputer = computed(() => {
         return !bio.value ? 0 : bio.value.length;
     });
+
+    const updateUserImage = async () => {
+        //
+    };
+
+    watch(() => name.value, async () => await updateUserDetails());
 </script>
