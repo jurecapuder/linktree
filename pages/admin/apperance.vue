@@ -144,4 +144,8 @@
     };
 
     watch(() => name.value, async () => await updateUserDetails());
+
+    watch(() => bio.value, async () => await updateUserDetails());
+
+    watch(() => data.value, async () => await updateUserImage());
 </script>
