@@ -4,9 +4,14 @@
         :class="userStore.theme"
     />
 
-    <div>
-
-    </div>
+    <AdminLayout>
+        <div
+            id="PreviewAdminPage"
+            class="w-full mx-auto pt-32 relative z-10"
+        >
+    
+        </div>
+    </AdminLayout>
 </template>
 
 <script setup>
